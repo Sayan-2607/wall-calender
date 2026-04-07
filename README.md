@@ -1,29 +1,69 @@
+# 📅 Wall Calendar App
+
+A modern, interactive **Wall Calendar Web App** built with **Next.js (App Router), TypeScript, and React**.
+Designed to mimic a real wall calendar with notes, themes, and smooth UX.
+
+---
+
+## 🚀 Features
+
+* 📆 **Dynamic Calendar Grid**
+
+  * Month navigation
+  * Day selection & range selection
+* 📝 **Notes System**
+
+  * Add, edit, delete notes
+  * Color-coded notes
+  * Persistent storage (localStorage)
+* 🎨 **Theme Support**
+
+  * Multiple UI themes
+  * Clean and modern design
+* 🔔 **Toast Notifications**
+
+  * Feedback for user actions
+* 🧠 **Optimized Performance**
+
+  * Memoized components
+  * Efficient state management
+* 💾 **Local Storage Sync**
+
+  * Data persists across sessions
+
+---
+
+## 📂 Project Structure
+
+```
 src/
 ├── app/
-│   ├── layout.tsx         
-│   ├── page.tsx         
-│   └── globals.css         
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Main entry page
+│   └── globals.css        # Global styles
 │
 ├── components/
 │   └── calendar/
-│       ├── WallCalendar.tsx   # Orchestrator — composes all panels
-│       ├── HeroPanel.tsx      # Photo + chevron overlay + theme switcher
-│       ├── CalendarGrid.tsx   # Month nav + day-of-week headers + grid
-│       ├── DateCell.tsx       # Individual day cell (memoized)
-│       ├── NotesPanel.tsx     # Textarea + color picker + saved notes list
-│       ├── SpiralRings.tsx    # Decorative wire binding at top
-│       ├── Toast.tsx          # Toast notification stack
-│       └── index.ts           # Barrel export
+│       ├── WallCalendar.tsx   # Main orchestrator
+│       ├── HeroPanel.tsx      # Header + theme switcher
+│       ├── CalendarGrid.tsx   # Calendar layout
+│       ├── DateCell.tsx       # Individual date cell
+│       ├── NotesPanel.tsx     # Notes UI
+│       ├── SpiralRings.tsx    # Decorative top rings
+│       ├── Toast.tsx          # Notifications
+│       └── index.ts           # Barrel exports
 │
 ├── hooks/
-│   ├── useCalendar.ts      # Month navigation + range selection state machine
-│   ├── useNotes.ts         # CRUD for notes, localStorage sync
-│   ├── useLocalStorage.ts  # Generic localStorage hook (SSR-safe)
-│   └── useToast.ts         # Toast queue management
+│   ├── useCalendar.ts      # Calendar logic
+│   ├── useNotes.ts         # Notes CRUD + storage
+│   ├── useLocalStorage.ts  # Reusable storage hook
+│   └── useToast.ts         # Toast state manager
 │
 ├── lib/
-│   ├── constants.ts        # THEMES, HOLIDAYS, MONTH_NAMES, NOTE_COLORS
-│   └── utils.ts            # Date helpers wrapping date-fns
+│   ├── constants.ts        # App constants
+│   └── utils.ts            # Date utilities
 │
 └── types/
-    └── index.ts            # TypeScript interfaces: CalendarNote, DateRange, etc.
+    └── index.ts            # TypeScript types
+```
+

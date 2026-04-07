@@ -1,0 +1,132 @@
+import type { CalendarTheme, HolidayMap } from "@/types";
+
+export const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+export const DAY_ABBR = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+export const US_HOLIDAYS: HolidayMap = {
+  "1-1": "New Year's Day",
+  "1-15": "MLK Day",
+  "2-14": "Valentine's Day",
+  "2-19": "Presidents' Day",
+  "3-17": "St. Patrick's Day",
+  "4-22": "Earth Day",
+  "5-27": "Memorial Day",
+  "6-19": "Juneteenth",
+  "7-4": "Independence Day",
+  "9-2": "Labor Day",
+  "10-14": "Columbus Day",
+  "10-31": "Halloween",
+  "11-11": "Veterans Day",
+  "11-28": "Thanksgiving",
+  "12-25": "Christmas Day",
+  "12-31": "New Year's Eve",
+};
+
+export const THEMES: CalendarTheme[] = [
+  {
+    id: "arctic",
+    name: "Arctic Blue",
+    accent: "#1565C0",
+    accentLight: "rgba(21,101,192,0.12)",
+    accentDark: "#0D47A1",
+    chevronPrimary: "#1976D2",
+    chevronSecondary: "#0D47A1",
+    images: [
+      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1490750967868-88df5691cc89?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&auto=format&fit=crop&q=85",
+    ],
+  },
+  {
+    id: "ember",
+    name: "Ember Red",
+    accent: "#B71C1C",
+    accentLight: "rgba(183,28,28,0.12)",
+    accentDark: "#7F0000",
+    chevronPrimary: "#C62828",
+    chevronSecondary: "#7F0000",
+    images: [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&auto=format&fit=crop&q=85",
+    ],
+  },
+  {
+    id: "forest",
+    name: "Forest Green",
+    accent: "#1B5E20",
+    accentLight: "rgba(27,94,32,0.12)",
+    accentDark: "#003300",
+    chevronPrimary: "#2E7D32",
+    chevronSecondary: "#1B5E20",
+    images: [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&auto=format&fit=crop&q=85",
+    ],
+  },
+  {
+    id: "dusk",
+    name: "Dusk Violet",
+    accent: "#4A148C",
+    accentLight: "rgba(74,20,140,0.12)",
+    accentDark: "#12005e",
+    chevronPrimary: "#6A1B9A",
+    chevronSecondary: "#4A148C",
+    images: [
+      "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=900&auto=format&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&auto=format&fit=crop&q=85",
+    ],
+  },
+];
+
+export const NOTE_COLORS = ["blue", "amber", "rose", "emerald", "violet"] as const;
+
+export const NOTE_COLOR_CLASSES: Record<string, { bg: string; border: string; text: string; dot: string }> = {
+  blue: { bg: "bg-blue-50", border: "border-blue-200", text: "text-blue-900", dot: "bg-blue-400" },
+  amber: { bg: "bg-amber-50", border: "border-amber-200", text: "text-amber-900", dot: "bg-amber-400" },
+  rose: { bg: "bg-rose-50", border: "border-rose-200", text: "text-rose-900", dot: "bg-rose-400" },
+  emerald: { bg: "bg-emerald-50", border: "border-emerald-200", text: "text-emerald-900", dot: "bg-emerald-400" },
+  violet: { bg: "bg-violet-50", border: "border-violet-200", text: "text-violet-900", dot: "bg-violet-400" },
+};
